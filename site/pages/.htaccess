@@ -1,0 +1,2 @@
+# Forbid direct access to pages
+Deny from all

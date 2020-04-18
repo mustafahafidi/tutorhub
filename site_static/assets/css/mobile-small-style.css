@@ -1,0 +1,201 @@
+/*####################  HEADER  ########################*/
+
+
+/*####################  GENERAL MAIN CONTENT  ########################*/
+.main {
+    overflow: hidden;   
+}
+.main-content-container {
+    display: block;
+    margin: auto;
+}
+
+.main-content-container p {
+    border: 1px solid silver;
+    padding: 0 10px 0 10px;
+    border-radius: 10px;
+}
+
+#username-arrow {
+    visibility: hidden;
+}
+
+/*####################  HOME  ########################*/
+#home-content {
+    float: none;
+    margin-top: 0px;
+    margin: auto;
+    width: 80%;
+}
+#home-image {
+    float: none; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+    padding-top: 50px;
+}
+
+
+/*####################  ACCESS  ########################*/
+
+
+/*####################  HOME  ########################*/
+
+/*####################  ACCESS  ########################*/
+
+
+/*####################  STUDENT DASHBOARD  ########################*/
+
+.cover-photo-container {
+    height: 150px;
+    width: 100%;
+    position: absolute;
+}
+
+.cover-photo-container > img {
+    overflow: hidden;
+    z-index: 3;
+}
+
+.dashboard-width-container {
+    width: 85%;  
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+#user-photo {
+    position: relative;
+    top: 60px;
+    left: 0;
+    margin: 0 auto;
+    border: 4px solid silver;
+    border-radius: 500px;
+    z-index: 4;
+}
+
+#dashboard-user-info {
+    background-color: #eaeaea;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -232px;
+    margin: 0 auto 0 auto;
+    z-index: 2;
+    border-radius: 15px;
+}
+
+#dashboard-name-surname {
+    display: block;
+    width: inherit;
+    text-align: center;
+}
+
+#dashboard-user-info > ul {
+    position: relative;
+    top: 6px;
+    width: 70%;
+}
+
+#dashboard-user-info > ul > li{
+    list-style: none;
+    margin: 0 0 30px 0;
+    font-weight: 700;
+}
+
+.user-info-list {
+    font-weight: 400;
+    margin-right: 2%;
+}
+
+.right-space {
+    margin-right: 10px;
+    width: 15px;
+}
+
+#dashboard-name-surname {
+    font-size: 1.7em;
+}
+
+#chart {
+    visibility: hidden;
+}
+
+#description {
+    width: 100%;
+    top: -190px;
+    left: 0;
+    background-color: #eaeaea;
+    border-radius: 10px;
+}
+
+#description > p {
+    padding: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#description > h3 {
+    padding: 10px;
+    position: relative;
+    top: 0;
+    left: 0px;
+}
+
+#dashboard-calendar-description {
+    position: absolute;
+    visibility: hidden;
+}
+
+#dashboard-lessons-list {
+    float: left;
+    position: relative;
+    left: 0;
+    top: -200px;
+    width: 100%;
+}
+
+#dashboard-calendar {
+    width: 95%;
+    position: relative;
+    left: 0;
+    top: -180px;
+    padding-top: 43px; 
+    border-top: 1px solid silver;
+    margin: 0 auto 0 auto;
+}
+
+/*###################### SETTINGS #####################*/
+
+.setting-content {
+    width: 95%;
+}
+.setting-content > .form-settings > img {
+    width: 80%;
+}
+
+/*####################  CALENDAR  ########################*/
+
+#editable-calendar {
+    width: 95%;
+    position: relative;
+    padding-top: 43px; 
+    border-top: 1px solid silver;
+    margin: 0 auto 20px auto;
+}
+
+/*###################### FORM SEARCH  ##################*/
+
+.form-search .search-form-fieltset {
+    float: none;
+    width: 88%;
+    padding-left: 4%;
+}
+
+
+
+
+/*####################  FOOTER  ########################*/

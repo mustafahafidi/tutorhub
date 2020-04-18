@@ -1,0 +1,25 @@
+version: "3"
+services:
+  ws:
+    build: .
+    ports:
+      - 8080:80
+    volumes:
+      - ./site:/var/www/html
+    environment:
+      - DB_HOST=db
+      - DB_NAME=tutorhub
+      - DB_USER=root
+      - DB_PASS=toor
+  db:
+    image: mariadb:10.0.33
+    volumes:
+      - ./db_data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=toor
+  pma:
+    image: phpmyadmin/phpmyadmin:latest
+    environment:
+      - PMA_HOST=db
+    ports:
+      - 8081:80

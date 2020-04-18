@@ -1,0 +1,4 @@
+# Disable CGI for upload directory
+<Files *>
+    SetHandler default-handler
+</Files>

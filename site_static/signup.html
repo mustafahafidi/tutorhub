@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--[if lt IE 9]>
+        <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <title xml:lang="en" lang="en">Tutorhub - Sign up</title>
+    
+    <!--METATAGS-->
+    
+    <meta charset="UTF-8">
+    <meta name="description" content="Comunication between tutors and students"/>
+    <meta name="keywords" content="tutor, student, school, math"/>
+    <meta name="author" content="Michele Antonazzi, Aaron Cesaro, Andrea Biondo, Mustafa Hafidi"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <meta name="revised" content="tutorhub, 11/01/2018"/>
+    
+    <!--CSS INCLUDES-->
+    
+    <link rel="stylesheet" href="assets/css/normalize.css"/>
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/desktop-style.css" media="handheld, screen"/>
+    <link rel="stylesheet" href="assets/css/mobile-style.css" media="handheld, screen and (max-width:1150px), only screen and (max-device-width:1150px)"/>
+    <link rel="stylesheet" href="assets/css/mobile-small-style.css" media="handheld, screen and (max-width:767px), only screen and (max-device-width:767px)"/>
+    <link rel="stylesheet" href="assets/css/print-style.css"/>
+</head>
+<body>
+    
+    <!--#################   HEADER   ########################-->
+    
+    <header class="header">
+        <div class="header-width-container">
+            <h1 id="header-logo" xml:lang="en" lang="en">tutor<span class="hub-span" xml:lang="en" lang="en">Hub</span></h1>
+            <!-- MOBILE MENU ICON -->
+            <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
+                <span class="sr-only" xml:lang="en" lang="en">Open main menu</span>
+                <span class="fa fa-bars bars-color" aria-hidden="true"></span>
+            </a>
+            <h1 class="logo"></h1>
+            <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main menu">
+                <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close main menu">
+                  <span class="sr-only" xml:lang="en" lang="en">Close main menu</span>
+                  <span class="fa fa-window-close" aria-hidden="true"></span>
+                </a>
+                <ul id="header-general">
+                    <li><a href="index.html" xml:lang="en" lang="en">Home</a></li>
+                    <li><a href="login.html" xml:lang="en" lang="en">Log in</a></li>
+                    <li  class="visited-border no-hand"><a href="#" class="no-hand" xml:lang="en" lang="en">Sign up</a></li>
+                </ul>
+            </nav>
+            <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+        </div>
+    </header>
+    
+    <!--#################   MAIN     ########################-->
+    
+    <main class="main">
+        <div class="access-content">
+            <section>
+                <h1>Iscriviti a <span xml:lang="en" lang="en">tutor</span><span class="hub-span" xml:lang="en" lang="en">Hub</span></h1>
+            </section>            
+            <form class="form-style" action="" method="post">
+                <label for="signup-username" class="minor-padding-top">Scegli il tuo <span xml:lang="en" lang="en">username</span></label>
+                <input id="signup-username" type="text" tabindex="1" required autofocus>
+                <label for="signup-email">Inserisci la tua <span xml:lang="en" lang="en">email</span></label>
+                <input id="signup-email" type="email" tabindex="2" required autofocus>
+                <label for="signup-password">Scegli una <span xml:lang="en" lang="en">password</span></label>
+                <input id="signup-password"type="password" tabindex="3" required>
+                <label for="signup-repeat-password">Ripeti la <span xml:lang="en" lang="en">password</span></label>
+                <input id="signup-repeat-password" type="password" tabindex="4" required>
+                <button name="submit" type="submit" id="form-style-submit" data-submit="Sending" xml:lang="en" lang="en" tabindex="5">Sign up</button>
+            </form>
+        </div>
+    </main>
+    
+    <!--##################  FOOTER    ########################-->
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <span class="footer-logo" xml:lang="en" lang="en">tutor</span>
+            <span class="hub-span footer-logo" xml:lang="en" lang="en">Hub</span>
+            <span xml:lang="en" lang="en"> - Let's learn together</span>
+        </div>
+    </footer>
+</body>
+</html>

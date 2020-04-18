@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--[if lt IE 9]>
+        <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <title xml:lang="en" lang="en">Tutorhub - Home</title>
+    
+    <!--METATAGS-->
+    
+    <meta charset="UTF-8">
+    <meta name="description" content="Comunication between tutors and students"/>
+    <meta name="keywords" content="tutor, student, school, math"/>
+    <meta name="author" content="Michele Antonazzi, Aaron Cesaro, Andrea Biondo, Mustafa Hafidi"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <meta name="revised" content="tutorhub, 11/01/2018"/>
+    
+    <!--CSS CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.0/fullcalendar.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.0/fullcalendar.print.css"/>
+    <!--JS CDN-->
+    <!--NORMALIZE-->
+    <link rel="stylesheet" href="assets/css/normalize.css"/>
+    <!--CSS LOCAL-->
+    <link rel="stylesheet" href="assets/css/desktop-style.css" media="handheld, screen"/>
+    <link rel="stylesheet" href="assets/css/mobile-style.css" media="handheld, screen and (max-width:1024px), only screen and (max-device-width:1024px)"/>
+    <link rel="stylesheet" href="assets/css/mobile-small-style.css" media="handheld, screen and (max-width:767px), only screen and (max-device-width:767px)"/>
+    <link rel="stylesheet" href="assets/css/print-style.css"/>
+    <!--JS LOCAL-->
+    <script src="assets/js/moment.js"></script>
+    <script src="assets/js/style-script.js"></script>
+    <script src="assets/js/fullcalendar.min.js"></script>
+    <script src="assets/js/calendar.js"></script>
+</head>
+<body>
+    
+    <!--#################   HEADER   ########################-->
+    
+    <header class="header">
+        <div class="header-width-container">
+            <h1 id="header-logo" xml:lang="en" lang="en">tutor<span class="hub-span">Hub</span></h1>
+            <span class="hub-span page-indicator">Preferenze</span>
+            <!-- MOBILE MENU ICON -->
+            <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
+                <span class="sr-only" xml:lang="en" lang="en">Open main menu</span>
+                <span class="fa fa-bars bars-color" aria-hidden="true"></span>
+            </a>
+            <nav id="main-menu" class="main-menu" aria-expanded="false" aria-label="Main menu">
+                <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close main menu">
+                  <span class="sr-only" xml:lang="en" lang="en">Close main menu</span>
+                  <span class="fa fa-window-close" aria-hidden="true"></span>
+                </a>
+                <ul id="header-dashboard">
+                    <li><a href="stud-search.html">Cerca</a>
+                    <span class="fa fa-search" id="search-icon"></span></li>
+                    <span id="pipe">|</span>
+                    <li id="username-menu-style" class="dropdown">
+                        <button class="dropbtn">Profilo<!-- dynamic name --></button>
+                        <div class="dropdown-content" id="dropdown-ul">
+                            <a href="stud-dashboard.html" xml:lang="en" lang="en">Dashboard</a>
+                            <a href="calendar.html">Calendario</a>
+                            <a href="stud-setting.html">Preferenze</a>
+                            <a href="#" xml:lang="en" lang="en">Log Out</a>
+                        </div>
+                        <span class="fa fa-caret-down" id="username-arrow"><!-- dropdown menu --></span>
+                    </li>
+                    <li><img src="resources/images/index-main-images.png" id="small-user-photo"><!-- dynamic image --></li>
+                </ul>
+                
+            </nav>
+            <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+        </div>
+    </header>
+    
+    <!--#################   MAIN     ########################-->
+    
+    <main class="main-dashboard">
+        <div class="setting-content">
+            <section>
+                <h1>Informazioni personali</h1>
+            </section>  
+            <form class="form-style form-settings" action="" method="post">
+                <img alt="foto profile" src="resources/images/index-main-images.png">
+                <label for="setting-stud-foto">Scegli la tua foto profilo</label>
+                <input id="setting-stud-foto" type="file" aria-required="true" tabindex="1">
+                <label for="settings-stud-name">Il tuo nome</label>
+                <input id="settings-stud-name" type="text" tabindex="2" required autofocus tabindex="1">
+                <label for="settings-stud-surname">Il tuo cognome</label>
+                <input id="settings-stud-surname" type="text" tabindex="3" required autofocus>
+                <label for="settings-stud-username">Il tuo <span xml:lang="en" lang="en">username</span></label>
+                <input id="settings-stud-username" type="text" tabindex="4" required autofocus>
+                <label for="settings-stud-email">La tua <span xml:lang="en" lang="en">email</span></label>
+                <input id="settings-stud-email" type="email" tabindex="5" required autofocus aria-describedby="desc-email">
+                <span id="desc-email" class="form-description">mariorossi@gmail.com</span>
+                <label for="settings-stud-data-di-nascita" class="minor-padding-top">La tua data di nascita</label>
+                <input id="settings-stud-data-di-nascita" type="date" aria-describedby="desc-data-di-nascita" tabindex="6">
+                <span id="desc-data-di-nascita" class="form-description">GG/MM/AAAA</span>
+                <label for="settings-stud-residenza">Residente a</label>
+                <input id="settings-stud-residenza" type="text">
+                <label for="settings-stud-password" class="minor-padding-top">La tua <span xml:lang="en" lang="en">password</span></label>
+                <input id="settings-stud-password" type="password" tabindex="7" required>
+                <label for="settings-stud-repeat-password">Ripeti la <span xml:lang="en" lang="en">password</span></label>
+                <input id="settings-stud-repeat-password" type="password" tabindex="8" required>
+                <label for="settings-stud-description">Descrizione profilo</label>
+                <textarea id ="settings-stud-description" type="text" tabindex="9" aria-multiline="true"></textarea>
+                <button name="submit" type="submit" id="form-style-submit" data-submit="Sending" xml:lang="en" lang="en" tabindex="10">Salva modifiche</button>
+            </form>
+        </div>
+    </main>
+    
+    <!--##################  FOOTER    ########################-->
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <span xml:lang="en" lang="en" class="footer-logo">tutor</span>
+            <span class="hub-span footer-logo" xml:lang="en" lang="en">Hub</span>
+            <span xml:lang="en" lang="en"> - Let's learn together</span>
+        </div>
+    </footer>
+</body>
+</html> 

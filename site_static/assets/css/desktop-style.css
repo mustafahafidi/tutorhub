@@ -1,0 +1,744 @@
+/*####################  GENERAL  ########################*/
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", sans-serif;
+}
+
+/*####################  HEADER  ########################*/
+a {
+    text-decoration: none;
+    color: #f9fbfd;
+}
+.header {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #23282d;
+    min-height: 100px;
+    color: #f9fbfd;
+    align-items:center;
+}
+.header-width-container {
+    width: 85%;  
+    height:100px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header-logo {
+    float: left;
+    font-size: 2em;
+    font-weight: 100;
+    position: relative;
+}
+.hub-span {
+    font-weight: bold;
+}
+
+/*--------------------  GENERAL MENU --------------------*/
+
+#header-general {
+    float: right;
+    list-style-type: none;
+}
+#header-general > li {
+    float: left;
+    font-size: 1.3em;
+    margin-left: 25px;
+    border-top: 3px solid white;
+}
+
+#header-general > li > a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #f9fbfd;
+}
+
+#header-general > li:hover {
+    border-color: #7abbdc;
+}
+
+#header-general > li:hover {
+    border-color: #7abbdc;
+}
+
+#header-general > .visited-border {
+    border-top: 3px solid #7abbdc; 
+}
+
+#header-general > li > a.no-hand {
+    cursor: context-menu;
+    background-color: inherit;    
+}
+
+/*--------------------  DASHBOARD MENU --------------------*/
+
+.page-indicator {
+    font-size: 2em;
+    font-weight: 400;
+    position: relative;
+    left: 8%;
+}
+.prof-page-indicator {
+    font-size: 2em;
+    font-weight: 400;
+    position: relative;
+    left: 3%;
+}
+
+/*dashboard links*/
+
+#header-dashboard {
+    position: relative;
+    float: right;
+    list-style-type: none;
+    top: 16px;
+}
+#header-dashboard > li {
+    float: left;
+    font-size: 1.3em;
+    margin-left: 35px;
+    border-top: 3px solid white;
+}
+
+#header-dashboard > li > a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #f9fbfd;
+}
+
+#header-dashboard > li .current-page {
+    color: #7abbdc;
+    cursor: default;
+}
+
+#header-dashboard > li:nth-child(1):hover {
+    color: #7abbdc;
+}
+
+#header-dashboard > li:nth-child(1) > a {
+    float: left;
+}
+
+#header-dashboard > li{
+    border: none;
+}
+#header-dashboard > .visited-border {
+    border-top: 3px solid #7abbdc; 
+}
+
+#header-dashboard > li > a.no-hand {
+    cursor: context-menu;
+    background-color: inherit;    
+}
+
+#search-icon {
+    font-size: 18px;
+    margin: 4px 0 0 12px;
+    cursor: pointer;
+}
+
+#pipe {
+    font-size: 18px;
+    margin: 0 0 0 40px
+}
+
+#username-menu-style {
+    text-align: center;
+    cursor: pointer;
+}
+
+#username-menu-style:hover {
+    color: #7abbdc;
+    cursor: pointer;
+    border-top-color: #f9fbfd;
+}
+
+#username-arrow {
+    text-align: 
+}
+
+/*user dropdown menu*/
+
+.dropbtn {
+    cursor: pointer;
+    background-color: #23282d;
+    color: #f9fbfd;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9fbfd;
+    margin: 0 0 0 -28px;
+    min-width: 150px;
+    border: 1px solid #f9fbfd;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    font-size: .8em;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: #23282d !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f9fbfd;
+    color: #7abbdc !important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*user profile photo*/
+
+#small-user-photo {
+    position: relative;
+    width: 50px;
+    border: 1px solid silver;
+    border-radius: 50px;
+    top: -10px
+}
+
+/*--------------------  HIDE MENU  --------------------*/
+
+@media (min-width: 1025px) {
+    
+    .menu-toggle,
+    .main-menu .menu-close {
+        display: none;
+    }
+    .main-menu {
+        position: relative;
+        left: auto;
+        top: auto;
+        height: auto;
+    }
+  
+    .main-menu ul {
+        display: flex;
+        padding: 0;
+        -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+                box-shadow: none;
+        height: auto;
+        width: auto;
+        background: none;
+    }
+  
+    .main-menu a {
+        color: #06c;
+        border: 0 !important;
+    }
+  
+    .main-menu a:hover,
+    .main-menu a:focus {
+        background: none;
+        color: #c00;
+    }
+}
+
+/*####################  HOME MAIN CONTENT  ########################*/
+
+.main {
+    clear: left;
+    background-color: #2b3137;
+    color: #d5d5d5;
+    overflow: auto;
+    min-height: calc(100vh - 10.6em);
+}
+.main-content-container {
+    width: 1024px;
+    margin: auto;
+    display: flex;
+}
+
+/*####################  HOME  ########################*/
+
+#home-content {
+    float: left;
+    width: 60%;
+    margin-right: 2%;
+    margin-top: 5%;
+}
+#home-content > h1 {
+    font-size: 72px;
+    font-weight: 300;
+}
+#home-content > p {
+    font-size: 25px;
+    font-weight: 200;
+    line-height: 1.6em;
+}
+
+#home-image {
+    float: left;
+    width: 300px;
+    height: 300px;
+    padding-top: 114px;
+    margin-bottom: 20px;
+}
+
+/*####################  ACCESS  ########################*/
+
+.access-content {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.access-content h1 {
+  font-weight: 100;
+}
+
+.access-content section {
+  text-align: center;
+}
+
+.form-style {
+    background: #F9F9F9;
+    padding: 7%;
+    margin-top: 50px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    text-align: center;
+}
+
+input {
+    min-width: 90%;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+label {
+    color: #586069;
+    bottom: 8px;
+    display: block;
+    text-align: left;
+    padding: 17px 5px 11px 8px ;
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"], 
+input[type="date"],
+input[type="file"],
+textarea{
+    width: 80%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover,
+input[type="file"]:hover,
+input[type="date"]:hover,
+textarea{
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+.form-style button[type="submit"] {
+    cursor: pointer;
+    width: 90%;
+    border: none;
+    background: #4CAF50;
+    color: #FFF;
+    margin: 0 0 5px 0;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 24px; 
+}   
+
+.form-style button[type="submit"]:hover {
+    background: #43A047;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form-style button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+.form-style input:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+
+/*####################  STUD-DASHBOARD  ########################*/
+
+
+.main-dashboard  {
+    background-color: #f9fbfd;
+    color: #2b3137;
+    position: center;
+    
+}
+
+.cover-photo-container {
+    height: 300px;
+    width: 100%;
+}
+
+.cover-photo-container > img {
+    position: relative;
+    overflow: hidden;
+    width: inherit;
+    height: inherit;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-width-container {
+    clear: both;
+    width: 85%;  
+    margin: 0 auto;
+    padding: 0;
+    max-height: 1000px !important;
+}
+
+#user-photo {
+    position: relative;
+    left: -280px;
+    top: -150px;
+    width: 250px;
+    height: 250px;
+    border: 4px solid silver;
+    border-radius: 500px;
+    z-index: 4;
+}
+
+#dashboard-user-info {
+    position: relative;
+    top: -180px;
+    float: left;
+    background-color: #eaeaea;
+    width: 300px;
+    z-index: 2;
+    padding-top: 310px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+}
+
+#dashboard-name-surname {
+    display: block;
+    width: inherit;
+    text-align: center;
+}
+
+#dashboard-user-info > ul {
+    width: 85%;
+    border-top: 1px solid silver;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 25px;
+}
+
+#dashboard-user-info > ul > li{
+    list-style: none;
+    margin: 0 0 30px 0;
+    font-weight: 700;
+}
+
+.user-info-list {
+    font-weight: 400;
+    margin-right: 2%;
+}
+
+.right-space {
+    margin-right: 10px;
+    width: 15px;
+}
+
+#dashboard-name-surname {
+    font-size: 1.7em;
+}
+
+#description {
+    width:85%;
+    border-top: 1px solid silver;
+    margin: 0 auto;
+}
+
+#description > p,
+#description > h3 {
+    padding: 10px;
+    height: auto;
+}
+
+#dashboard-calendar-description {
+    position: relative;
+    top: -240px;
+    float: right;
+    width: 68%;
+    height: auto;
+    padding: 1%;
+    margin: 0;
+    background-color: #eaeaea;
+    border-radius: 10px; 
+}
+
+#dashboard-calendar-description > h3,
+#dashboard-calendar-description > p {
+    padding: 10px;
+}
+
+#dashboard-lessons-list {
+    position: relative;
+    top: -295px;
+    float: right;
+    width: 70%;
+    padding-top: 43px; 
+}
+
+#dashboard-calendar {
+    clear: both;
+    width: 100%;
+    position: relative;
+    top: -200px;
+    padding-top: 100px; 
+    border-top: 1px solid silver;
+}
+
+/*####################  CALENDAR  ########################*/
+
+#editable-calendar {
+    width: 85%;
+    position: relative;
+    margin: 50px auto 50px auto;
+    padding-top: 43px; 
+    border-top: 1px solid silver;
+
+}
+
+/*calendar accessibility improvement*/
+.visuallyhidden { 
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    height: 1px; 
+    margin: -1px; 
+    overflow: hidden; 
+    padding: 0; 
+    position: absolute; 
+    width: 1px; 
+}
+
+#calendar-description {
+    background-color: #eaeaea;
+    border-radius: 10px;
+    padding: 1%;
+    margin-top: 50px;
+}
+
+/*#################### SETTINGS FORM ###################*/
+
+.setting-content {
+    width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.setting-content section{
+  text-align: center;
+}
+
+.setting-content > .form-settings > img {
+    width: 65%;
+    border-radius: 500px;
+    border: 3px solid  silver;
+    margin-bottom: 30px;
+}
+
+.form-settings > .form-description {
+    font-size: 0.9em;
+    display: block;
+    text-align: right;
+    margin-top: 3px;
+    margin-right: 14px;
+}
+
+.minor-padding-top {
+    padding-top: 0px;
+}
+
+.form-settings > label {
+    padding-left: 15px;
+}
+
+.form-settings > textarea {
+    min-width: 94%;
+    padding: 0px;
+    margin-bottom: 0px;
+    height: 100px;
+    resize: none;
+}
+
+.demo-non-form {
+    width: 100%;
+    margin: 0 0 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-family: arial, verdana, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+.demo-container {
+    padding: 0 1em;
+}
+
+/*######################### SEARCH ######################*/
+
+.main-search {
+    min-height: calc(100vh - 13em);
+}
+
+.main-search > h1 {
+    margin-top: 40px; 
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 1;
+}
+
+
+/*###################### FORM SEARCH  ##################*/
+
+.form-search {
+    width: 70%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 1.3em 0em 5em 0em;
+    text-align: left;
+    overflow: hidden;
+    padding: 1.3em 0em 1.3em 0.7em; 
+}
+
+fieldset legend {
+   position: absolute;
+   left: -5000px;
+}
+fieldset {
+   border: 0;
+   padding: 0;
+   margin-left: 0px;
+}
+
+.form-search label {
+    padding-left: 0px;
+}
+
+.form-search .search-form-fieltset {
+    padding: 0;
+    padding-left: 3%;
+    float: left;
+    width: 36%;
+}
+
+.form-search #search-form-fieldset-search {
+    padding: 0;
+    float: left;
+    width: 18%;
+    margin-left: 3%;
+}
+
+.form-search #search-name,
+#search-citta, #search-materia, #search-price {
+    min-width: 1%;
+    width: 90%;
+}
+
+.form-search button[type="submit"] {
+    cursor: pointer;
+    border: 2px solid #23282d;
+    width: 80%;
+    background-color: #23282d;
+    color: #FFF;
+    margin: 0 0 5px 0;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+    margin-top: 65px; 
+    height: 90px;
+    font-size: 1.2em;
+}   
+
+.form-search button[type="submit"]:hover {
+    background-color: inherit;
+    color: #23282d;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.form-search button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/*####################  FOOTER  ########################*/
+
+.footer {
+    clear: both;
+    width: 100%;
+    color: #fff;
+    background-color: #23282d;
+    height: 70px;
+}
+
+.footer-container {
+    width: 1024px;  
+    margin: auto;
+    text-align: center;
+}
+
+.footer > div > span:first-child {
+    position: relative;
+    top: 25px;
+}
+
+.footer-logo {
+    position: relative;
+    top: 25px;
+}
+
+.footer > div > span:nth-child(even) {
+    margin-left: -4px;
+}
+
+.footer > div > span:nth-child(3) {
+    position: relative;
+    top: 25px;
+}
